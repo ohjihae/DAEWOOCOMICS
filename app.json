@@ -1,0 +1,12 @@
+{
+  "name": "DAEWOOCOMICS",
+  "displayName": "DAEWOOCOMICS",
+  "expo": {
+    "name": "DAEWOOCOMICS",
+    "slug": "DAEWOOCOMICS",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
