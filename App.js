@@ -9,11 +9,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
-import Home from './componets/Home'
+import Search from './componets/Search'
 import List from './componets/List'
 import Actions from './componets/Actions'
-import Details from './componets/Details'
-import LotsOfGreetings from './componets/LotsOfGreeting'
+import Home from './componets/Home'
+
+import chamlast from './componets/cham/image/chamlast'
+import chamfirst from './componets/cham/image/chamfirst'
+import cham from './componets/cham/cham'
+import so from './componets/so/so'
+import solast from './componets/so/image/solast'
+import sofirst from './componets/so/image/sofirst'
+
 
 // https://ionicons.com/
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -28,13 +35,23 @@ const store = createStore(rootReducer);
 
 const Tab = createBottomTabNavigator();
 const ListStack = createStackNavigator();
+const SearchStack = createStackNavigator();
 const HomeStack = createStackNavigator();
+
+const SearchStackScreen = () => {
+  return (
+    <SearchStack.Navigator>
+      <SearchStack.Screen name="Search" component={Search} options={{title:"Search", headerTitleAlign:"center"}} />
+    </SearchStack.Navigator>
+  )
+}
 
 const HomeStackScreen = () => {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen name="Home" component={Home} options={{title:"Home", headerTitleAlign:"center"}} />
-      <HomeStack.Screen name="Details" component={Details} options={{title:"Details", headerTitleAlign:"center"}}  />
+      <HomeStack.Screen name="cham" component={cham} options={{title:"참교육", headerTitleAlign:"center"}} />
+      <HomeStack.Screen name="so" component={so} options={{title:"소녀의 세계", headerTitleAlign:"center"}} />
     </HomeStack.Navigator>
   )
 }
@@ -42,8 +59,13 @@ const HomeStackScreen = () => {
 const ListStackScreen = () => {
   return (
     <ListStack.Navigator>
-      <ListStack.Screen name="List" component={List} options={{title:"List", headerTitleAlign:"center"}} />
-      <ListStack.Screen name="Details" component={Details} options={{title:"Details", headerTitleAlign:"center"}}  />
+      <ListStack.Screen name="List" component={List} options={{title:"순위별", headerTitleAlign:"center"}} />
+      <ListStack.Screen name="chamlast" component={chamlast} options={{title:"17화", headerTitleAlign:"center"}}  />
+      <ListStack.Screen name="chamfirst" component={chamfirst} options={{title:"1화", headerTitleAlign:"center"}}  />
+      <ListStack.Screen name="cham" component={cham} options={{title:"참교육", headerTitleAlign:"center"}} />
+      <ListStack.Screen name="so" component={so} options={{title:"소녀의 세계", headerTitleAlign:"center"}} />
+      <ListStack.Screen name="solast" component={solast} options={{title:"20화", headerTitleAlign:"center"}}  />
+      <ListStack.Screen name="sofirst" component={sofirst} options={{title:"1화", headerTitleAlign:"center"}}  />
     </ListStack.Navigator>
   )
 }
@@ -62,8 +84,8 @@ const screeOptions = ({ route }) => ({
         break;
       case 'List':
         iconName = focused
-          ? 'list'
-          : 'list-outline'; 
+          ? 'podium'
+          : 'podium-outline'; 
         break;
       case 'Search':
         iconName = focused
@@ -72,8 +94,8 @@ const screeOptions = ({ route }) => ({
         break;
       case 'Actions':
         iconName = focused
-          ? 'checkmark'
-          : 'checkmark-outline'; 
+          ? 'heart'
+          : 'heart-outline'; 
         break;
     }
 
@@ -83,7 +105,7 @@ const screeOptions = ({ route }) => ({
 })
 
 const tabBarOptions= {
-  activeTintColor: 'tomato',
+  activeTintColor: 'cadetblue',
   inactiveTintColor: 'gray',
 }
 
@@ -95,9 +117,9 @@ export default function App() {
       <SafeAreaProvider>
         <NavigationContainer>
           <Tab.Navigator screenOptions={screeOptions} tabBarOptions={tabBarOptions}>
-            <Tab.Screen name="Home" component={LotsOfGreetings}/>
+            <Tab.Screen name="Home" component={HomeStackScreen}/>
             <Tab.Screen name="List" component={ListStackScreen}/>
-            <Tab.Screen name="Search" component={HomeStackScreen}/>
+            <Tab.Screen name="Search" component={SearchStackScreen}/>
             <Tab.Screen name="Actions" component={Actions}/>
           </Tab.Navigator>
         </NavigationContainer>
