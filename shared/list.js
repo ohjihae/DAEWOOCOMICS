@@ -3,7 +3,7 @@ export const LISTDATA = [
     id: 1,
     subid: 'cham',
     title: '참교육',
-    image: "https://lh3.googleusercontent.com/hwwxYhph5M6nW7cCkGqDlN4Xgh1dhxFFD-84cHVz0z-ZzHAiexQha63zMfjzQb64nxN-1A=s154",
+    image: "https://ylabac.kr/wp-content/uploads/2020/11/%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8-%EC%86%8C%EC%8B%9D-%EC%B1%84%EC%9A%A9%ED%83%9D-%EC%B0%B8%EA%B5%90%EC%9C%A1-%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%9B%B9%ED%88%B0-%EC%97%B0%EC%9E%AC-%EC%8B%9C%EC%9E%91-01.jpg",
     subtitle: '채용택 / 한가람',
     description:'무너진 교권을 지키기 위해 교권보호국 소속 나화진의 참교육이 시작된다! *부활남* 채용택 작가 X *신석기녀* 한가람 작가의 신작! 스토리, 액션15세 이용가'
   },
@@ -11,7 +11,7 @@ export const LISTDATA = [
     id: 2,
     subid: 'so',
     title: '소녀의 세계',
-    image: "https://lh3.googleusercontent.com/I9KA9Gt1aZwX85QYzcw2_SOw0M4nvBWywnY63wQxk1VdkxE5MB0ET_AdZJ8-q2n_2bZvpQ=s143",
+    image: "https://pbs.twimg.com/media/DIUV-_BUMAEpBFs.jpg",
     subtitle: '모랑지',
     description:'완벽해 보이지만 사실 외로웠던 백조들과 맘씨 착한 오리가 만나 여러 갈등을 함께 겪으며 진짜 친구가 되어가는 소녀들의 찐 우정물 스토리, 드라마 전체연령가'
   },
@@ -19,7 +19,7 @@ export const LISTDATA = [
     id: 3,
     subid: 'elec',
     title: '일렉시드',
-    image: "https://lh3.googleusercontent.com/proxy/58YKNCq_LdJ41i3ytmcxK6UCDmO1pdSG94oLbCkPsuE9C-IAxzX1cCF2NmCF10Cp5HamlHCn9YWo1sIw4jC9XWj4immQZslJGL-iJKJz6oHAnN7Woo23RAKyuOWqT2CwnUnOIsg",
+    image: "https://comicthumb-phinf.pstatic.net/20191127_185/pocket_15747908314220ABz0_JPEG/_690x1000.jpg",
     subtitle: '손제호 / 제나',
     description:'<노블레스> 손제호 작가와 <소녀더와일즈> 제나 작가가 만났다! 고양이 몸에 깃든 각성자 카이든과 각성능력을 숨겨온 고등학생 지우 러블리 2인조의 액션 판타지'
   },
