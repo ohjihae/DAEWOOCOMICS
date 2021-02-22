@@ -20,6 +20,9 @@ import cham from './componets/cham/cham'
 import so from './componets/so/so'
 import solast from './componets/so/image/solast'
 import sofirst from './componets/so/image/sofirst'
+import elec from './componets/elec/elec'
+import elecfirst from './componets/elec/image/elecfirst'
+import eleclast from './componets/elec/image/eleclast'
 
 
 // https://ionicons.com/
@@ -29,7 +32,6 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
 import rootReducer from './redux/reducers'
-import { TapGestureHandler } from 'react-native-gesture-handler';
 
 const store = createStore(rootReducer); 
 
@@ -51,7 +53,14 @@ const HomeStackScreen = () => {
     <HomeStack.Navigator>
       <HomeStack.Screen name="Home" component={Home} options={{title:"Home", headerTitleAlign:"center"}} />
       <HomeStack.Screen name="cham" component={cham} options={{title:"참교육", headerTitleAlign:"center"}} />
+      <HomeStack.Screen name="chamlast" component={chamlast} options={{title:"17화", headerTitleAlign:"center"}}  />
+      <HomeStack.Screen name="chamfirst" component={chamfirst} options={{title:"1화", headerTitleAlign:"center"}}  />
       <HomeStack.Screen name="so" component={so} options={{title:"소녀의 세계", headerTitleAlign:"center"}} />
+      <HomeStack.Screen name="solast" component={solast} options={{title:"20화", headerTitleAlign:"center"}}  />
+      <HomeStack.Screen name="sofirst" component={sofirst} options={{title:"1화", headerTitleAlign:"center"}}  />
+      <HomeStack.Screen name="elec" component={elec} options={{title:"일렉시드", headerTitleAlign:"center"}} />
+      <HomeStack.Screen name="eleclast" component={eleclast} options={{title:"5화", headerTitleAlign:"center"}}  />
+      <HomeStack.Screen name="elecfirst" component={elecfirst} options={{title:"1화", headerTitleAlign:"center"}}  />
     </HomeStack.Navigator>
   )
 }
@@ -66,6 +75,9 @@ const ListStackScreen = () => {
       <ListStack.Screen name="so" component={so} options={{title:"소녀의 세계", headerTitleAlign:"center"}} />
       <ListStack.Screen name="solast" component={solast} options={{title:"20화", headerTitleAlign:"center"}}  />
       <ListStack.Screen name="sofirst" component={sofirst} options={{title:"1화", headerTitleAlign:"center"}}  />
+      <ListStack.Screen name="elec" component={elec} options={{title:"일렉시드", headerTitleAlign:"center"}} />
+      <ListStack.Screen name="eleclast" component={eleclast} options={{title:"5화", headerTitleAlign:"center"}}  />
+      <ListStack.Screen name="elecfirst" component={elecfirst} options={{title:"1화", headerTitleAlign:"center"}}  />
     </ListStack.Navigator>
   )
 }

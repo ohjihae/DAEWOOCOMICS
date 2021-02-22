@@ -17,7 +17,7 @@ export const LISTDATA = [
   },
   {
     id: 3,
-    subid: 'so',
+    subid: 'elec',
     title: '일렉시드',
     image: "https://lh3.googleusercontent.com/proxy/58YKNCq_LdJ41i3ytmcxK6UCDmO1pdSG94oLbCkPsuE9C-IAxzX1cCF2NmCF10Cp5HamlHCn9YWo1sIw4jC9XWj4immQZslJGL-iJKJz6oHAnN7Woo23RAKyuOWqT2CwnUnOIsg",
     subtitle: '손제호 / 제나',
