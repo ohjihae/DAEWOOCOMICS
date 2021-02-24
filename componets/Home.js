@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Home = ({ navigation }) => {
+const Home = ({ navigation, list }) => {
 
   return (
     <View>
@@ -47,7 +47,7 @@ const Home = ({ navigation }) => {
       <FlatGrid
         itemDimension={120}
         spacing={0}
-        data={LISTDATA}
+        data={list}
         renderItem={({item}) => (
           <View style={styles.itemContainer}>
             <Card.Image

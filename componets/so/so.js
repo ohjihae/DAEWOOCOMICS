@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useCallback, useState } from 'react';
 import { Text, View } from 'react-native';
 import { Card, Button, Icon } from 'react-native-elements'
 import { ScrollView } from 'react-native-gesture-handler'
@@ -8,39 +8,70 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addAction } from '../../redux/actions'
 import { removeAction } from '../../redux/actions'
 
-import {LISTDATA} from '../../shared/list'
-import { SOLISTDATA } from './SoList'
+import api from '../../api/list'
 
 import sofirst from './image/sofirst';
-import last from './image/solast';
 
-const So = ({ route, navigation }) => {
-
-  const list = SOLISTDATA;
+const so = ({ route, navigation }) => {
 
   // navigation.navigate("스크린이름", 매개변수)
-  console.log("--detail");
-  console.log(route.params);  // navigate로 넘어온 매개변수
+  //console.log("--detail");
+ // console.log(route.params);  // navigate로 넘어온 매개변수
 
   // const id = route.params.id;
   const { id } = route.params;
+  console.log(route.params);
+  console.log(list);
+ 
 
-  const item = LISTDATA.filter(item => item.id == id)[0];
-  console.log(item);
-
-  const item2 = list.filter(item => item.id == id)[0];
+  const [item, setItem] = useState([]);
 
   const dispatch = useDispatch();
 
+
   const actions = useSelector(state => state.actions);
-  console.log("--actions--");
-  console.log(actions);
+  // console.log("--actions--");
+  // console.log(actions);
 
   const isExistedAction = actions.filter(item => item.id == id).length > 0 ? true : false;
-  console.log("--isExistedAction--");
-  console.log(isExistedAction);
+  // console.log("--isExistedAction--");
+  // console.log(isExistedAction);
+
+
+  const getDetails = useCallback(async () => {
+    const result = await api.get(id);
+    // console.log(result.data);
+    setItem(result.data);
+  }, [])
+
+  useEffect(()=>{
+    getDetails();
+  }, []);
+
+  const [list, setList] = useState([]);  
+  const item2 = list.filter(item => item.id == id)[0];
+  const getList = useCallback(async () => {
+    const result = await api.solist();
+    // console.log(result.data);
+    // state를 갱신해서 다시 그리기
+    setList(result.data);
+  }, [])
+
+  useEffect(()=>{
+    // navigation 이벤트 리스너를 생성
+    // 반환 값이 이벤트 리스너 해제 함수
+    const unsubscribe = navigation.addListener(
+      'focus',
+      () => {
+        // console.log('focus')
+        getList();
+      }
+    )
+    return unsubscribe;
+  }, [navigation])
 
   return (
+  
     <View
       style={{
         flex: 1,
@@ -58,12 +89,13 @@ const So = ({ route, navigation }) => {
             {item.description}
           </Text>
           <View style={{flexDirection:'row'}}>
+         {list &&
           <Button
             title="첫화보기"
             buttonStyle={{ width: 130, height: 30, backgroundColor: "cadetblue", marginRight:50, marginLeft:20 }}
             onPress={() => { navigation.navigate(item2.idd = sofirst)}}
           />
-
+         }
           {
             isExistedAction
               ?
@@ -101,4 +133,4 @@ const So = ({ route, navigation }) => {
     </View>
   )
 }
-export default So;
+export default so;

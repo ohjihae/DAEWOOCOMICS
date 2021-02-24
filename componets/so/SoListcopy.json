@@ -1,0 +1,106 @@
+{
+  "solist": [
+    {
+      "id": 17,
+      "idd": "solast",
+      "title": "20화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/259/thumbnail_202x120_f2860008-f1ba-4170-85b2-41213d088de8.jpg"
+    },
+    {
+      "id": 16,
+      "idd": "la",
+      "title": "16화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/257/thumbnail_202x120_c3806a69-9dc4-4acf-a04a-3316c68845fc.jpg"
+    },
+    {
+      "id": 15,
+      "idd": "la",
+      "title": "15화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/256/thumbnail_202x120_7fe0a5df-3b5b-4de7-9e92-e3dcf6d9df42.jpg"
+    },
+    {
+      "id": 14,
+      "idd": "la",
+      "title": "14화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/250/thumbnail_202x120_122114f1-cdf4-40cd-8181-6f4a9c3a4ed1.jpg"
+    },
+    {
+      "id": 13,
+      "idd": "la",
+      "title": "13화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/254/thumbnail_202x120_9409da65-6403-47e2-8af3-74b02db070c4.jpg"
+    },
+    {
+      "id": 12,
+      "idd": "la",
+      "title": "12화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/253/thumbnail_202x120_f2471dfe-bd5c-4820-91aa-3d26ed1c9015.jpg"
+    },
+    {
+      "id": 11,
+      "idd": "la",
+      "title": "11화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/252/thumbnail_202x120_b12ae04e-2640-4830-944a-6c5e2b99b1ac.jpg"
+    },
+    {
+      "id": 10,
+      "idd": "la",
+      "title": "10화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/211/thumbnail_202x120_06e0b111-acbf-4d37-892f-be684e89d220.jpg"
+    },
+    {
+      "id": 9,
+      "idd": "la",
+      "title": "9화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/212/thumbnail_202x120_4ea48e0d-699b-43d3-b660-58507fb6111c.jpg"
+    },
+    {
+      "id": 8,
+      "idd": "la",
+      "title": "8화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/210/thumbnail_202x120_83a375fb-25c5-439d-a795-fa70d8d77d54.jpg"
+    },
+    {
+      "id": 7,
+      "idd": "la",
+      "title": "7화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/251/thumbnail_202x120_3cdd6b1a-1fe9-4e5d-97c2-9b26792ae755.jpg"
+    },
+    {
+      "id": 6,
+      "idd": "la",
+      "title": "6화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/255/thumbnail_202x120_7219f3cd-c5f7-4342-9e41-d19c87ada87c.jpg"
+    },
+    {
+      "id": 5,
+      "idd": "la",
+      "title": "5화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/254/thumbnail_202x120_9409da65-6403-47e2-8af3-74b02db070c4.jpg"
+    },
+    {
+      "id": 4,
+      "idd": "la",
+      "title": "4화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/215/thumbnail_202x120_68eb7654-bc1d-4588-91b9-2eb6207eecdc.jpg"
+    },
+    {
+      "id": 3,
+      "idd": "la",
+      "title": "3화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/256/thumbnail_202x120_7fe0a5df-3b5b-4de7-9e92-e3dcf6d9df42.jpg"
+    },
+    {
+      "id": 2,
+      "idd": "la",
+      "title": "2화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/214/thumbnail_202x120_b0b4c495-9a48-4576-8f17-dd238f987d1e.jpg"
+    },
+    {
+      "id": 1,
+      "idd": "sofirst",
+      "title": "1화",
+      "image": "https://shared-comic.pstatic.net/thumb/webtoon/654774/218/thumbnail_202x120_1ce0b904-6b07-4201-bc86-676c2e02f62a.jpg"
+    }
+  ]
+}

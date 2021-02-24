@@ -1,7 +1,5 @@
 import React from 'react';
-import { Text, View, Button } from 'react-native';
-
-import { LISTDATA } from '../shared/list'
+import { View } from 'react-native';
 
 import { ListItem, Avatar } from 'react-native-elements'
 import { ScrollView } from 'react-native-gesture-handler'
@@ -11,13 +9,7 @@ import { ScrollView } from 'react-native-gesture-handler'
 
 //JSX를 쓰려면 import React from 'react';
 // Navigator로 화면을 이동할 때 컴포넌트 속성으로 navigation이 전달됨
-const List = ({ navigation }) => {
-
-  const list = LISTDATA;
-  console.log(list);
-
-
-
+const List = ({ navigation, list }) => {
   return (
     <View style={{flex: 1}}>
       <ScrollView contentContainerStyle={{ flexGrow:1, alignItems:"center", justifyContent:"center" }}>

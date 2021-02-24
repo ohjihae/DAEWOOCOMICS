@@ -8,9 +8,9 @@ const chamlast = () => {
       <ScrollView>
         <Image
           source={{
-            uri: 'https://lh3.googleusercontent.com/proxy/8P048pRfUqU51Puue5Y3b45fJJc_44IQRC6LBfPJ-_dJpWZF4eBlcyOYbfEDxKLPeqSrJ4ega9JeM8rgizqyt3bqapBus9KKjJI30RdOY9t87AjQ9RatcRsMHWzH65TyPy_u6zNrmduDOLS9wWzW_6dlIDtD'
+            uri: 'https://mblogthumb-phinf.pstatic.net/MjAxOTA4MTFfMTMx/MDAxNTY1NDk0NTIyMTc3.6BtXMMvIAmalnZuxvA-L2XPTW5dAzbh4uxNgwkbWFiAg.9NSocHrLOhcDvWBVuPOf37PUXpEDpar8otZJNZieJ0Eg.PNG.letmewin/GMCOL1.PNG?type=w800'
           }}
-          style={{ width: "100%", height: 5000 }}
+          style={{ width: "100%", height: 12539 }}
         />
       </ScrollView>
     </View>

@@ -10,13 +10,13 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
 import Search from './componets/Search'
-import List from './componets/List'
+import List from './componets/ListContainer'
 import Actions from './componets/Actions'
-import Home from './componets/Home'
+import Home from './componets/HomeContainer'
 
 import chamlast from './componets/cham/image/chamlast'
 import chamfirst from './componets/cham/image/chamfirst'
-import cham from './componets/cham/cham'
+import cham from './componets/cham/Cham'
 import so from './componets/so/so'
 import solast from './componets/so/image/solast'
 import sofirst from './componets/so/image/sofirst'
