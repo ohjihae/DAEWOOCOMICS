@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "228426809661",
+    "project_id": "notification-lecture-379f7",
+    "storage_bucket": "notification-lecture-379f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228426809661:android:46506564d53a9202efc554",
+        "android_client_info": {
+          "package_name": "com.daewoocomics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228426809661-6spahhmtdduisu7tln64jhh5rqdisrv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa2kqdoU9OaBWCeiE2fNHu-25sWV659sA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228426809661-6spahhmtdduisu7tln64jhh5rqdisrv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
