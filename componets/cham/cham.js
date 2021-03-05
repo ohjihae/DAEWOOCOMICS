@@ -24,7 +24,7 @@ const Cham = ({ route, navigation }) => {
   console.log(list);
  
 
-  const [item, setItem] = useState([]);
+  const [item, setItem] = useState({});
 
   const dispatch = useDispatch();
 
@@ -34,8 +34,8 @@ const Cham = ({ route, navigation }) => {
   // console.log(actions);
 
   const isExistedAction = actions.filter(item => item.id == id).length > 0 ? true : false;
-  // console.log("--isExistedAction--");
-  // console.log(isExistedAction);
+  console.log("--isExistedAction--");
+  console.log(isExistedAction);
 
 
   const getDetails = useCallback(async () => {
@@ -58,17 +58,8 @@ const Cham = ({ route, navigation }) => {
   }, [])
 
   useEffect(()=>{
-    // navigation 이벤트 리스너를 생성
-    // 반환 값이 이벤트 리스너 해제 함수
-    const unsubscribe = navigation.addListener(
-      'focus',
-      () => {
-        // console.log('focus')
-        getList();
-      }
-    )
-    return unsubscribe;
-  }, [navigation])
+    getList();
+  }, []);
 
   return (
   
@@ -92,7 +83,7 @@ const Cham = ({ route, navigation }) => {
          {list &&
           <Button
             title="첫화보기"
-            buttonStyle={{ width: 130, height: 30, backgroundColor: "cadetblue", marginRight:50, marginLeft:20 }}
+            buttonStyle={{ width: 130, height: 30, backgroundColor: 'rgb(101, 113, 203)', marginRight:50, marginLeft:20 }}
             onPress={() => { navigation.navigate(item2.idd = chamfirst)}}
           />
          }
@@ -110,7 +101,7 @@ const Cham = ({ route, navigation }) => {
               <Button
                 onPress={() => { dispatch(addAction(item)) }}
                 icon={<Icon name='heart-outline' type='ionicon' color='#ffffff' />}
-                buttonStyle={{ borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0, backgroundColor: "cadetblue", width: 130, height: 30 }}
+                buttonStyle={{ borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0, backgroundColor: 'rgb(101, 113, 203)', width: 130, height: 30 }}
                 title='Like'
               />
           }

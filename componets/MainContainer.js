@@ -13,6 +13,7 @@ import Search from './Search'
 import List from './ListContainer'
 import Actions from './Actions'
 import Home from './HomeContainer'
+import HWTest from './HWTest'
 
 import chamlast from './cham/image/chamlast'
 import chamfirst from './cham/image/chamfirst'
@@ -104,6 +105,11 @@ const screeOptions = ({ route }) => ({
           ? 'heart'
           : 'heart-outline'; 
         break;
+      case 'HWTest':
+        iconName = focused
+          ? 'hardware-chip'
+          : 'hardware-chip-outline'; 
+        break;                
     }
 
     // You can return any component that you like here!
@@ -112,7 +118,7 @@ const screeOptions = ({ route }) => ({
 })
 
 const tabBarOptions= {
-  activeTintColor: 'cadetblue',
+  activeTintColor: 'rgb(101, 113, 203)',
   inactiveTintColor: 'gray',
 }
 
@@ -138,6 +144,7 @@ export default function Main() {
             <Tab.Screen name="List" component={ListStackScreen}/>
             <Tab.Screen name="Search" component={SearchStackScreen}/>
             <Tab.Screen name="Actions" component={Actions}/>
+            <Tab.Screen name="HWTest" component={HWTest} />
           </Tab.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>

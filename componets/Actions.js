@@ -6,7 +6,10 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 import { removeAction } from '../redux/actions'
 
-const Actions = ({navigation}) => {
+const Actions = ({route, navigation}) => {
+
+  console.log("-- route.params --");
+  console.log(route.params);
 
   const actions = useSelector(state => state.actions);
   console.log("--actions state in Actions Component");

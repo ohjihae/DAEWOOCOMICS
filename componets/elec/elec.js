@@ -92,7 +92,7 @@ const elec = ({ route, navigation }) => {
          {list &&
           <Button
             title="첫화보기"
-            buttonStyle={{ width: 130, height: 30, backgroundColor: "cadetblue", marginRight:50, marginLeft:20 }}
+            buttonStyle={{ width: 130, height: 30, backgroundColor: 'rgb(101, 113, 203)', marginRight:50, marginLeft:20 }}
             onPress={() => { navigation.navigate(item2.idd = elecfirst)}}
           />
          }
@@ -110,7 +110,7 @@ const elec = ({ route, navigation }) => {
               <Button
                 onPress={() => { dispatch(addAction(item)) }}
                 icon={<Icon name='heart-outline' type='ionicon' color='#ffffff' />}
-                buttonStyle={{ borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0, backgroundColor: "cadetblue", width: 130, height: 30 }}
+                buttonStyle={{ borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0, backgroundColor: 'rgb(101, 113, 203)', width: 130, height: 30 }}
                 title='Like'
               />
           }
