@@ -14,7 +14,7 @@ const ListContainer = ({ navigation }) => {
     setList(result.data);
   }, [])
 
-  useEffect(()=>{
+  useEffect(() => {
     // navigation 이벤트 리스너를 생성
     // 반환 값이 이벤트 리스너 해제 함수
     const unsubscribe = navigation.addListener(

@@ -21,7 +21,7 @@ export default function App() {
   return (
     <Provider store={store}>
       {/* useDispatch, useSelector 안됨 */}
-      <Main/>
+      <Main />
     </Provider>
   );
 }

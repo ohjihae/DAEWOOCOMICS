@@ -40,25 +40,25 @@ const Home = ({ navigation, list }) => {
 
   return (
     <View>
-      <View style={{width:'100%',height:'24%'}}>
-      <Card.Image source={{uri: 'https://i.ytimg.com/vi/JRXcbcEnqEs/maxresdefault.jpg'}}></Card.Image>
+      <View style={{ width: '100%', height: '24%' }}>
+        <Card.Image source={{ uri: 'https://i.ytimg.com/vi/JRXcbcEnqEs/maxresdefault.jpg' }}></Card.Image>
       </View>
-      <View style={{width:'100%',height:'76%'}}>
-      <FlatGrid
-        itemDimension={120}
-        spacing={0}
-        data={list}
-        renderItem={({item}) => (
-          <View style={styles.itemContainer}>
-            <Card.Image
-            source={{uri: item.image}}
-            onPress={()=>{navigation.navigate(item.subid,{id: item.id})}}
-            /> 
-            <Text style={styles.itemName}>{item.title}</Text>
-            <Text style={styles.itemsubtitle}>{item.subtitle}</Text>
-          </View>
-        )}
-      />
+      <View style={{ width: '100%', height: '76%' }}>
+        <FlatGrid
+          itemDimension={120}
+          spacing={0}
+          data={list}
+          renderItem={({ item }) => (
+            <View style={styles.itemContainer}>
+              <Card.Image
+                source={{ uri: item.image }}
+                onPress={() => { navigation.navigate(item.subid, { id: item.id }) }}
+              />
+              <Text style={styles.itemName}>{item.title}</Text>
+              <Text style={styles.itemsubtitle}>{item.subtitle}</Text>
+            </View>
+          )}
+        />
       </View>
     </View>
   );

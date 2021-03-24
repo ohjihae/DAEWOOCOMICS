@@ -6,7 +6,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 import { removeAction } from '../redux/actions'
 
-const Actions = ({route, navigation}) => {
+const Actions = ({ route, navigation }) => {
 
   console.log("-- route.params --");
   console.log(route.params);
@@ -17,21 +17,21 @@ const Actions = ({route, navigation}) => {
 
   const dispatch = useDispatch();
 
-  return(
-    <View style={{flex:1}}>
+  return (
+    <View style={{ flex: 1 }}>
       <ScrollView contentContainerStyle={{ flexGrow: 1, alignItems: "center", justifyContent: 'center' }}>
-      {
-        actions.map((item, i) => (
-          <ListItem containerStyle={{width:"80%"}} key={i} onPress={()=>{navigation.navigate(item.subid, {id: item.id})}}>
-            <Avatar source={{uri: item.image}} />
-            <ListItem.Content>
-              <ListItem.Title>{item.title}</ListItem.Title>
-              <ListItem.Subtitle>{item.subtitle}</ListItem.Subtitle>
-            </ListItem.Content>
-            <Icon name='close' type='ionicon' color='gray' onPress={()=>{dispatch(removeAction(item.id))}} />
-          </ListItem>
-        ))
-      }
+        {
+          actions.map((item, i) => (
+            <ListItem containerStyle={{ width: "80%" }} key={i} onPress={() => { navigation.navigate(item.subid, { id: item.id }) }}>
+              <Avatar source={{ uri: item.image }} />
+              <ListItem.Content>
+                <ListItem.Title>{item.title}</ListItem.Title>
+                <ListItem.Subtitle>{item.subtitle}</ListItem.Subtitle>
+              </ListItem.Content>
+              <Icon name='close' type='ionicon' color='gray' onPress={() => { dispatch(removeAction(item.id)) }} />
+            </ListItem>
+          ))
+        }
       </ScrollView>
     </View>
   )

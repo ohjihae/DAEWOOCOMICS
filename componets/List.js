@@ -11,12 +11,12 @@ import { ScrollView } from 'react-native-gesture-handler'
 // Navigator로 화면을 이동할 때 컴포넌트 속성으로 navigation이 전달됨
 const List = ({ navigation, list }) => {
   return (
-    <View style={{flex: 1}}>
-      <ScrollView contentContainerStyle={{ flexGrow:1, alignItems:"center", justifyContent:"center" }}>
+    <View style={{ flex: 1 }}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1, alignItems: "center", justifyContent: "center" }}>
         {
           list.map((item, i) => (
-            <ListItem containerStyle={{width:"90%"}} key={i} onPress={()=>{navigation.navigate(item.subid, {id: item.id})}}>
-              <Avatar source={{uri: item.image}} />
+            <ListItem containerStyle={{ width: "90%" }} key={i} onPress={() => { navigation.navigate(item.subid, { id: item.id }) }}>
+              <Avatar source={{ uri: item.image }} />
               <ListItem.Content>
                 <ListItem.Title>{item.title}</ListItem.Title>
                 <ListItem.Subtitle>{item.subtitle}</ListItem.Subtitle>
